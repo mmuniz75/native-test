@@ -3,7 +3,6 @@ package edu.muniz.askalien.admin
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import reactor.core.publisher.Flux
 
 @RestController
 class AnswerController {
@@ -12,7 +11,7 @@ class AnswerController {
     lateinit var service: AnswerService
 
     @GetMapping("/admin/answers")
-    fun getAnswers(): Flux<Answer> {
+    suspend fun getAnswers(): List<Answer> {
         return service.getAnswers()
     }
 

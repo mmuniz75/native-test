@@ -10,7 +10,7 @@ class AnswerService {
     @Autowired
     lateinit var repo: AnswerRepository
 
-    fun getAnswers(): Flux<Answer> {
+    suspend fun getAnswers(): List<Answer> {
         return repo.findAllSummary()
     }
 
