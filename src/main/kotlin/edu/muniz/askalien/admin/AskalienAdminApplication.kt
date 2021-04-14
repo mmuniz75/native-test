@@ -4,10 +4,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class AskalienAdminApplication
+class AskalienAdminApplication2
 
 fun main(args: Array<String>) {
-	runApplication<AskalienAdminApplication>(*args)
+	runApplication<AskalienAdminApplication2>(*args)
 }
 
 

@@ -1,5 +1,6 @@
-package edu.muniz.askalien.admin
+package edu.muniz.askalien.admin.repository
 
+import edu.muniz.askalien.admin.domain.Answer
 import org.springframework.data.r2dbc.repository.Query
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import reactor.core.publisher.Flux

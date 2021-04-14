@@ -6,6 +6,19 @@ CREATE TABLE answer (
     videonumber integer
 );
 
+CREATE TABLE question (
+	id serial PRIMARY KEY,
+	creationdate timestamp NULL,
+	creator varchar(50) NULL,
+	email varchar(50) NULL,
+	feedback text NULL,
+	ip varchar(50) NULL,
+	"text" text NULL,
+	answer_id int4 NULL,
+	country varchar(50) NULL
+);
+
+
 INSERT INTO answer (content,subject,url,videonumber) VALUES	('Yes, but only when the planet and the person have compatible frequencies or in other words,...','Can an Earth human physically transfer and live on another planet?','',1);
 INSERT INTO answer (content,subject,url,videonumber) VALUES ('The planets with living conditions, even though extreme, ...','Do all planets have some kind of life?','',2);
 INSERT INTO answer (content,subject,url,videonumber) VALUES	('Precisely because many beings of your race, like you, being ...','I am very upset about all this is happening. I do not know how you may be wasting your time with a race as belligerent as ours.','',15);
@@ -16,3 +29,15 @@ INSERT INTO answer (content,subject,url,videonumber) VALUES ('Well, the meaning 
 INSERT INTO answer (content,subject,url,videonumber) VALUES ('No, they cannot give these technologies to anyone because it does not belong to them.','Since the Reptilians are working with governments on Earth does this mean that some of these spacecraft can be built right here with technology they have given them?','',6);
 INSERT INTO answer (content,subject,url,videonumber) VALUES ('As I said, I cannot be apocalyptic. In general I can say it''s only a matter of time before the Yellowstone explodes.','About the Yellowstone volcano, do you have some prevision about a imminent eruption?','',23);
 INSERT INTO answer (content,subject,url,videonumber) VALUES ('The reptilians and their human partners expect natural disasters to eliminate much of Earths population, but if genocide happens our community will take appropriate action.','The Community Galactica will not do anything to prevent the extermination of humans?','',5);
+
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-05 22:39:41.259',NULL,NULL,NULL,'207.237.47.237','Level',580,'UNITED STATES');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-05 22:48:02.338',NULL,NULL,NULL,'207.237.47.237','Level',923,'UNITED STATES');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 08:29:54.339',NULL,NULL,NULL,'88.212.37.138','Chamber',875,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 08:31:04.850',NULL,NULL,NULL,'88.212.37.138','Chamber',1409,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:36:31.576',NULL,NULL,NULL,'88.212.37.138','New',805,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:38:39.011',NULL,NULL,NULL,'88.212.37.138','New',780,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:39:24.122',NULL,NULL,NULL,'88.212.37.138','New',11,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:40:31.627',NULL,NULL,NULL,'88.212.37.138','New',279,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:44:01.557',NULL,NULL,NULL,'88.212.37.138','New',899,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:47:22.753',NULL,NULL,NULL,'88.212.37.138','New',1117,'SLOVAKIA');
+INSERT INTO question (creationdate,creator,email,feedback,ip,"text",answer_id,country) VALUES ('2021-04-06 10:47:23.556',NULL,NULL,NULL,'88.212.37.138','New',1117,'SLOVAKIA');

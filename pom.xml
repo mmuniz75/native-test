@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.muniz.native</groupId>
-	<artifactId>askalien-admin</artifactId>
+	<artifactId>native-askalien-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>askalien-admin</name>
+	<name>native-askalien-admin</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
