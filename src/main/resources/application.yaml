@@ -3,6 +3,11 @@ spring:
     active: prod
   r2dbc:
     url: r2dbc:${DATABASE_URL}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri:  ${AUTHENTICATOR_SERVER}/.well-known/jwks.json    
 
 logging:
   level:
