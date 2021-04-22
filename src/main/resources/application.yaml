@@ -1,6 +1,8 @@
 spring:
+  profiles:
+    active: prod
   r2dbc:
-    url: r2dbc:h2:mem:///testdb
+    url: r2dbc:${DATABASE_URL}
 
 logging:
   level:

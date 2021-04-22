@@ -1,4 +1,4 @@
-package edu.muniz.askalien.admin
+package edu.muniz.askalien.admin.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity
@@ -14,7 +14,7 @@ class OAuth2SecurityConfig {
         http
                 .csrf().disable()
                 .authorizeExchange()
-                .pathMatchers("/admin/answers").permitAll()
+                .pathMatchers("/admin/**").permitAll()
                 .and().httpBasic()
         return http.build()
     }

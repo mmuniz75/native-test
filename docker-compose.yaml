@@ -1,6 +1,10 @@
 version: '3.1'
 services:
   askalien-admin:
-    image: askalien-admin:0.0.1-SNAPSHOT
+    image: native-askalien-admin:4.1.0-SNAPSHOT
     ports:
       - "8080:8080"
+    environment: 
+      -  APPLICATION_WEBSITE=
+      -  AUTHENTICATOR_SERVER=
+      -  DATABASE_URL=

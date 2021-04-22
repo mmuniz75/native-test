@@ -1,4 +1,4 @@
-package edu.muniz.askalien.admin
+package edu.muniz.askalien.admin.domain
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import org.springframework.data.annotation.Id
